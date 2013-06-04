@@ -1,0 +1,8 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="webModel" homePage="sv1#page1">
+  <OperationUnits>
+    <CreateUnit gr:x="315" gr:y="225" id="sv1#cru1" name="Create" entity="ent2">
+      <KOLink id="sv1#cru1#kln1" name="KOLink1" to="sv1#page3" automaticCoupling="true"/>
+      <OKLink id="sv1#cru1#oln1" name="OKLink1" to="sv1#page1" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</SiteView>
