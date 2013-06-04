@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="50" gr:y="195" id="sv1#page3" name="Edit Glossary">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="225" id="sv1#page3" name="Edit Glossary" linkOrder="sv1#page3#ln14">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv1#page3#enu1" name="Entry Form" fieldOrder="sv1#page3#enu1#fld1 sv1#page3#enu1#fld2 sv1#page3#enu1#fld4" linkOrder="sv1#page3#enu1#ln2">
-      <Field id="sv1#page3#enu1#fld1" name="Entry:" type="string" modifiable="true" contentType="text/plain">
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page3#enu1" name="Entry Form" fieldOrder="sv1#page3#enu1#fld1 sv1#page3#enu1#fld2 sv1#page3#enu1#fld4" entity="ent2" linkOrder="sv1#page3#enu1#ln9">
+      <Field id="sv1#page3#enu1#fld1" name="Entry:" type="string" modifiable="true" contentType="text/plain" attribute="ent2#att4">
         <VRules>
           <ValueLengthValidationRule id="sv1#page3#enu1#fld1#vl3" name="ValidationEntry" predicate="neq" errorMessage="mandatory field" value="0"/>
         </VRules>
       </Field>
-      <Field id="sv1#page3#enu1#fld2" name="Definition:" type="text" modifiable="true" contentType="text/plain">
+      <Field id="sv1#page3#enu1#fld2" name="Definition:" type="text" modifiable="true" contentType="text/plain" attribute="ent2#att5">
         <VRules>
           <ValueLengthValidationRule id="sv1#page3#enu1#fld2#vl2" name="ValidationDefinition" predicate="neq" value="0" errorMessage="mandatory field"/>
         </VRules>
@@ -17,11 +17,12 @@
           <CaptchaValidationRule id="sv1#page3#enu1#fld4#captcha1" name="Captcha" errorMessage="Error al captcha"/>
         </VRules>
       </Field>
-      <Link id="sv1#page3#enu1#ln2" name="Save" to="sv1#cru1" type="normal" validate="true">
-        <LinkParameter id="sv1#page3#enu1#ln2#par1" name="_created" blank="true" target="sv1#cru1.ent2#att7"/>
-        <LinkParameter id="sv1#page3#enu1#ln2#par2" name="Definition:_definition" source="sv1#page3#enu1#fld2" target="sv1#cru1.ent2#att5"/>
-        <LinkParameter id="sv1#page3#enu1#ln2#par3" name="Entry:_entry" source="sv1#page3#enu1#fld1" target="sv1#cru1.ent2#att4"/>
-        <LinkParameter id="sv1#page3#enu1#ln2#par4" name="time_last_modified" target="sv1#cru1.ent2#att6" blank="true"/>
+      <Link id="sv1#page3#enu1#ln9" name="Guardar" to="sv1#inn1" type="normal" validate="true">
+        <LinkParameter id="sv1#page3#enu1#ln9#par30" name="Entry Object_Input" source="key.ent2#att3" target="sv1#inn1.isnotnull"/>
+        <LinkParameter id="sv1#page3#enu1#ln9#par32" name="Definition:_PASSING" source="sv1#page3#enu1#fld2" passing="true"/>
+        <LinkParameter id="sv1#page3#enu1#ln9#par33" name="Entry Object_PASSING" source="entityBean" passing="true"/>
+        <LinkParameter id="sv1#page3#enu1#ln9#par34" name="Entry:_PASSING" source="sv1#page3#enu1#fld1" passing="true"/>
+        <LinkParameter id="sv1#page3#enu1#ln9#par35" name="Key [oid]_PASSING" source="key.ent2#att3" passing="true"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
@@ -32,7 +33,7 @@
           <layout:Field field="sv1#page3#enu1#fld1"/>
           <layout:Field field="sv1#page3#enu1#fld2"/>
           <layout:Field field="sv1#page3#enu1#fld4"/>
-          <layout:Link link="sv1#page3#enu1#ln2"/>
+          <layout:Link link="sv1#page3#enu1#ln9"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -48,4 +49,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#page3#ln14" name="Home" to="sv1#page1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="73,-106,-47,119"/>
 </Page>

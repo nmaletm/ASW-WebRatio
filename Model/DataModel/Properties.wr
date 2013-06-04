@@ -50,9 +50,8 @@
     <Attribute id="ent2#att3" key="true" name="oid" type="integer" db:column="OID"/>
     <Attribute id="ent2#att4" name="entry" type="string" db:column="ENTRY"/>
     <Attribute id="ent2#att5" name="definition" type="string" db:column="DEFINITION"/>
-    <Attribute id="ent2#att6" name="last_modified" type="time" db:column="LAST_MODIFIED"/>
-    <Attribute id="ent2#att7" name="created" type="time" db:column="CREATED"/>
+    <Attribute id="ent2#att6" name="last_modified" type="timestamp" db:column="LAST_MODIFIED"/>
+    <Attribute id="ent2#att7" name="created" type="timestamp" db:column="CREATED"/>
   </Entity>
-  <db:Database id="db2" name="db_asw" type="Apache Derby" url="jdbc:derby://localhost:1527/db_asw;create=true" username="aaa" cryptedPassword="true" password="YWFh" schema="APP">
-  </db:Database>
+  <db:Database id="db2" name="db_asw" type="Apache Derby" url="jdbc:derby://localhost:1527/db_asw;create=true" username="aaa" cryptedPassword="true" password="YWFh" schema="APP"/>
 </DataModel>

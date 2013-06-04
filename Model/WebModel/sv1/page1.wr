@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="0" id="sv1#page1" name="Glossary Home" linkOrder="sv1#page1#ln1">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="210" gr:y="0" id="sv1#page1" name="Glossary Home" linkOrder="sv1#page1#ln1">
   <ContentUnits>
-    <AlphabetUnit gr:x="105" gr:y="0" id="sv1#page1#alphu1" name="Browse" useNumbers="false" specialCharacters="#" entity="ent2" attribute="ent2#att4" customDescriptor="false" linkOrder="sv1#page1#alphu1#ln4">
-      <Link id="sv1#page1#alphu1#ln4" name="Link4" to="sv1#page2#inu3" type="normal" validate="true">
+    <AlphabetUnit gr:x="0" gr:y="0" id="sv1#page1#alphu1" name="Browse" useNumbers="false" specialCharacters="#" entity="ent2" attribute="ent2#att4" customDescriptor="false" linkOrder="sv1#page1#alphu1#ln4">
+      <Link id="sv1#page1#alphu1#ln4" name="Link4" to="sv1#page2#inu3" type="normal" validate="true" gr:bendpoints="-265,0,0,-100">
         <LinkParameter id="sv1#page1#alphu1#ln4#par6" name="entry_AttCondition2" source="data[].letter" target="sv1#page2#inu3#su2#acond2"/>
       </Link>
     </AlphabetUnit>
-    <IndexUnit gr:x="0" gr:y="0" id="sv1#page1#inu2" name="Last Updates" entity="ent2" displayAttributes="ent2#att4 ent2#att5 ent2#att6" maxResults="3" customDescriptor="false" distinct="false">
+    <IndexUnit gr:x="90" gr:y="0" id="sv1#page1#inu2" name="Last Updates" entity="ent2" displayAttributes="ent2#att4 ent2#att5 ent2#att6" maxResults="3" customDescriptor="false" distinct="false">
       <SortAttribute attribute="ent2#att6" order="descending"/>
     </IndexUnit>
   </ContentUnits>
