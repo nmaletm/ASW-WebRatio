@@ -28,7 +28,7 @@
     </IsNotNullUnit>
     <TimeUnit gr:x="450" gr:y="200" id="sv1#tmu1" name="CreatedTime">
       <Link id="sv1#tmu1#ln10" name="Link10" to="sv1#cru1" type="transport" validate="true">
-        <LinkParameter id="sv1#tmu1#ln10#par53" name="Current/Input Time_created" target="sv1#cru1.ent2#att7" sourceValue="Current/Input Timestamp"/>
+        <LinkParameter id="sv1#tmu1#ln10#par53" name="Current/Input Time_created" target="sv1#cru1.ent2#att7" source="currentTimestamp"/>
         <LinkParameter id="sv1#tmu1#ln10#par57" name="Current/Input Time_last_modified" source="currentTimestamp" target="sv1#cru1.ent2#att6"/>
         <LinkParameter id="sv1#tmu1#ln10#par79" name="Definition:_PASSING_definition" sourceLinkParameter="sv1#inn1#kln3#par36" target="sv1#cru1.ent2#att5"/>
         <LinkParameter id="sv1#tmu1#ln10#par80" name="Entry:_PASSING_entry" sourceLinkParameter="sv1#inn1#kln3#par38" target="sv1#cru1.ent2#att4"/>

@@ -53,5 +53,6 @@
     <Attribute id="ent2#att6" name="last_modified" type="timestamp" db:column="LAST_MODIFIED"/>
     <Attribute id="ent2#att7" name="created" type="timestamp" db:column="CREATED"/>
   </Entity>
-  <db:Database id="db2" name="db_asw" type="Apache Derby" url="jdbc:derby://localhost:1527/db_asw;create=true" username="aaa" cryptedPassword="true" password="YWFh" schema="APP"/>
+  <db:Database id="db2" name="db_asw" type="Apache Derby" url="jdbc:derby://localhost:1527/db_asw;create=true" username="aaa" cryptedPassword="true" password="YWFh" schema="APP">
+  </db:Database>
 </DataModel>
