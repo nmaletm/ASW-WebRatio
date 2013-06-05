@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-120" gr:y="95" id="sv1#page2" name="Show Entries by Letter" linkOrder="sv1#page2#ln15 sv1#page2#ln16">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-250" gr:y="100" id="sv1#page2" name="Show Entries by Letter" linkOrder="sv1#page2#ln15 sv1#page2#ln16">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv1#page2#inu3" name=" Entries by Letter " entity="ent2" displayAttributes="ent2#att4 ent2#att5 ent2#att6 ent2#att7" linkOrder="sv1#page2#inu3#ln3">
       <Selector id="sv1#page2#inu3#su2" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#page2#inu3#su2#acond2" name="AttCondition2" predicate="beginsWith" booleanOperator="and" implied="false" ignoreCase="true" attributes="ent2#att4"/>
       </Selector>
-      <Link id="sv1#page2#inu3#ln3" name="Modify" to="sv1#page3#enu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="3,124,-197,-1"/>
+      <Link id="sv1#page2#inu3#ln3" name="Modify" to="sv1#page3#enu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="5,94,-200,-6"/>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

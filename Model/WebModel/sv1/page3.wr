@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="225" id="sv1#page3" name="Edit Glossary" linkOrder="sv1#page3#ln14">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="205" id="sv1#page3" name="Edit Glossary" linkOrder="sv1#page3#ln14">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv1#page3#enu1" name="Entry Form" fieldOrder="sv1#page3#enu1#fld1 sv1#page3#enu1#fld2 sv1#page3#enu1#fld4" entity="ent2" linkOrder="sv1#page3#enu1#ln9">
       <Field id="sv1#page3#enu1#fld1" name="Entry:" type="string" modifiable="true" contentType="text/plain" attribute="ent2#att4">
@@ -17,12 +17,12 @@
           <CaptchaValidationRule id="sv1#page3#enu1#fld4#captcha1" name="Captcha" errorMessage="Error al captcha"/>
         </VRules>
       </Field>
-      <Link id="sv1#page3#enu1#ln9" name="Guardar" to="sv1#inn1" type="normal" validate="true">
-        <LinkParameter id="sv1#page3#enu1#ln9#par30" name="Entry Object_Input" source="key.ent2#att3" target="sv1#inn1.isnotnull"/>
+      <Link id="sv1#page3#enu1#ln9" name="Guardar" to="sv1#seu1" type="normal" validate="true">
         <LinkParameter id="sv1#page3#enu1#ln9#par32" name="Definition:_PASSING" source="sv1#page3#enu1#fld2" passing="true"/>
         <LinkParameter id="sv1#page3#enu1#ln9#par33" name="Entry Object_PASSING" source="entityBean" passing="true"/>
         <LinkParameter id="sv1#page3#enu1#ln9#par34" name="Entry:_PASSING" source="sv1#page3#enu1#fld1" passing="true"/>
         <LinkParameter id="sv1#page3#enu1#ln9#par35" name="Key [oid]_PASSING" source="key.ent2#att3" passing="true"/>
+        <LinkParameter id="sv1#page3#enu1#ln9#par11" name="Entry:_AttCondition3" source="sv1#page3#enu1#fld1" target="sv1#seu1#su1#acond3"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
@@ -49,5 +49,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv1#page3#ln14" name="Home" to="sv1#page1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="73,-106,-47,119"/>
+  <Link id="sv1#page3#ln14" name="Home" to="sv1#page1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="85,-114,-160,91"/>
 </Page>

@@ -49,5 +49,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv1#page1#ln1" name="New Entry " to="sv1#page3" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page1#ln1" name="New Entry " to="sv1#page3" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-197,86,48,-119"/>
 </Page>

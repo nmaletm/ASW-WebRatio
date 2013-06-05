@@ -1,52 +1,63 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="webModel" homePage="sv1#page1">
   <OperationUnits>
     <CreateUnit gr:x="610" gr:y="130" id="sv1#cru1" name="Create" entity="ent2">
-      <KOLink id="sv1#cru1#kln1" name="KOLink1" to="sv1#page3" automaticCoupling="true" gr:bendpoints="-330,-5,210,-105"/>
+      <KOLink id="sv1#cru1#kln1" name="KOLink1" to="sv1#page3" automaticCoupling="true" gr:bendpoints="-461,7,114,-98"/>
       <OKLink id="sv1#cru1#oln1" name="OKLink1" to="sv1#page1" automaticCoupling="true"/>
     </CreateUnit>
     <ModifyUnit gr:x="610" gr:y="310" id="sv1#mfu2" name="Edit" entity="ent2">
       <Selector id="sv1#mfu2#su3" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#mfu2#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
-      <KOLink id="sv1#mfu2#kln4" name="KOLink4" to="sv1#page3" automaticCoupling="true" gr:bendpoints="-321,53,219,83"/>
+      <KOLink id="sv1#mfu2#kln4" name="KOLink4" to="sv1#page3" automaticCoupling="true" gr:bendpoints="-482,0,98,85"/>
       <OKLink id="sv1#mfu2#oln7" name="OKLink7" to="sv1#page1" automaticCoupling="true" gr:bendpoints="78,-58,413,232;92,-263,407,27"/>
     </ModifyUnit>
-    <IsNotNullUnit gr:x="320" gr:y="245" id="sv1#inn1" name="Entry exist?">
+    <IsNotNullUnit gr:x="340" gr:y="245" id="sv1#inn1" name="Entry exist?">
       <OKLink id="sv1#inn1#oln6" name="OKLink6" to="sv1#tmu2">
-        <LinkParameter id="sv1#inn1#oln6#par40" name="Definition:_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par32" passing="true"/>
-        <LinkParameter id="sv1#inn1#oln6#par41" name="Entry Object_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par33" passing="true"/>
-        <LinkParameter id="sv1#inn1#oln6#par42" name="Entry:_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par34" passing="true"/>
-        <LinkParameter id="sv1#inn1#oln6#par43" name="Key [oid]_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par35" passing="true"/>
         <LinkParameter id="sv1#inn1#oln6#par44" name="Input Value_PASSING" source="inputValue" passing="true"/>
+        <LinkParameter id="sv1#inn1#oln6#par13" name="created_PASSING" sourceLinkParameter="sv1#seu1#ln5#par1" passing="true"/>
+        <LinkParameter id="sv1#inn1#oln6#par14" name="Definition:_PASSING" sourceLinkParameter="sv1#seu1#ln5#par2" passing="true"/>
+        <LinkParameter id="sv1#inn1#oln6#par15" name="Entry:_PASSING" sourceLinkParameter="sv1#seu1#ln5#par5" passing="true"/>
+        <LinkParameter id="sv1#inn1#oln6#par16" name="last_modified_PASSING" sourceLinkParameter="sv1#seu1#ln5#par8" passing="true"/>
       </OKLink>
       <KOLink id="sv1#inn1#kln3" name="KOLink3" to="sv1#tmu1">
-        <LinkParameter id="sv1#inn1#kln3#par36" name="Definition:_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par32" passing="true"/>
-        <LinkParameter id="sv1#inn1#kln3#par37" name="Entry Object_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par33" passing="true"/>
-        <LinkParameter id="sv1#inn1#kln3#par38" name="Entry:_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par34" passing="true"/>
-        <LinkParameter id="sv1#inn1#kln3#par39" name="Key [oid]_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par35" passing="true"/>
+        <LinkParameter id="sv1#inn1#kln3#par20" name="Definition:_PASSING" sourceLinkParameter="sv1#seu1#ln5#par2" passing="true"/>
+        <LinkParameter id="sv1#inn1#kln3#par21" name="Entry:_PASSING" sourceLinkParameter="sv1#seu1#ln5#par5" passing="true"/>
       </KOLink>
     </IsNotNullUnit>
     <TimeUnit gr:x="450" gr:y="200" id="sv1#tmu1" name="CreatedTime">
       <Link id="sv1#tmu1#ln10" name="Link10" to="sv1#cru1" type="transport" validate="true">
         <LinkParameter id="sv1#tmu1#ln10#par53" name="Current/Input Time_created" target="sv1#cru1.ent2#att7" source="currentTimestamp"/>
         <LinkParameter id="sv1#tmu1#ln10#par57" name="Current/Input Time_last_modified" source="currentTimestamp" target="sv1#cru1.ent2#att6"/>
-        <LinkParameter id="sv1#tmu1#ln10#par79" name="Definition:_PASSING_definition" sourceLinkParameter="sv1#inn1#kln3#par36" target="sv1#cru1.ent2#att5"/>
-        <LinkParameter id="sv1#tmu1#ln10#par80" name="Entry:_PASSING_entry" sourceLinkParameter="sv1#inn1#kln3#par38" target="sv1#cru1.ent2#att4"/>
-        <LinkParameter id="sv1#tmu1#ln10#par81" name="Entry Object_PASSING_Entry Object" sourceLinkParameter="sv1#inn1#kln3#par37" target="sv1#cru1.entityBeans"/>
-        <LinkParameter id="sv1#tmu1#ln10#par82" name="Key [oid]_PASSING_oid" sourceLinkParameter="sv1#inn1#kln3#par39" target="sv1#cru1.ent2#att3"/>
+        <LinkParameter id="sv1#tmu1#ln10#par22" name="Definition:_PASSING_definition" sourceLinkParameter="sv1#inn1#kln3#par20" target="sv1#cru1.ent2#att5"/>
+        <LinkParameter id="sv1#tmu1#ln10#par23" name="Entry:_PASSING_entry" sourceLinkParameter="sv1#inn1#kln3#par21" target="sv1#cru1.ent2#att4"/>
       </Link>
-      <OKLink id="sv1#tmu1#oln11" name="OKLink11" to="sv1#cru1" automaticCoupling="true" gr:bendpoints="63,-26,-37,44"/>
+      <OKLink id="sv1#tmu1#oln11" name="OKLink11" to="sv1#cru1" automaticCoupling="true" gr:bendpoints="94,-16,-56,49"/>
     </TimeUnit>
     <TimeUnit gr:x="450" gr:y="285" id="sv1#tmu2" name="LastModTime" linkOrder="sv1#tmu2#ln11">
       <Link id="sv1#tmu2#ln11" name="Link11" to="sv1#mfu2" type="transport" validate="true">
         <LinkParameter id="sv1#tmu2#ln11#par63" name="Current/Input Time_last_modified" source="currentTimestamp" target="sv1#mfu2.ent2#att6"/>
-        <LinkParameter id="sv1#tmu2#ln11#par74" name="_created" blank="true" target="sv1#mfu2.ent2#att7"/>
-        <LinkParameter id="sv1#tmu2#ln11#par75" name="Definition:_PASSING_definition" sourceLinkParameter="sv1#inn1#oln6#par40" target="sv1#mfu2.ent2#att5"/>
-        <LinkParameter id="sv1#tmu2#ln11#par76" name="Entry:_PASSING_entry" sourceLinkParameter="sv1#inn1#oln6#par42" target="sv1#mfu2.ent2#att4"/>
-        <LinkParameter id="sv1#tmu2#ln11#par77" name="Entry Object_PASSING_Entry Object" sourceLinkParameter="sv1#inn1#oln6#par41" target="sv1#mfu2.entityBeans"/>
-        <LinkParameter id="sv1#tmu2#ln11#par78" name="Key [oid]_PASSING_KeyCondition2 [oid]" sourceLinkParameter="sv1#inn1#oln6#par43" target="sv1#mfu2#su3#kcond2.ent2#att3"/>
+        <LinkParameter id="sv1#tmu2#ln11#par74" name="_created" target="sv1#mfu2.ent2#att7" sourceLinkParameter="sv1#inn1#oln6#par13"/>
+        <LinkParameter id="sv1#tmu2#ln11#par17" name="Definition:_PASSING_definition" sourceLinkParameter="sv1#inn1#oln6#par14" target="sv1#mfu2.ent2#att5"/>
+        <LinkParameter id="sv1#tmu2#ln11#par18" name="Entry:_PASSING_entry" sourceLinkParameter="sv1#inn1#oln6#par15" target="sv1#mfu2.ent2#att4"/>
+        <LinkParameter id="sv1#tmu2#ln11#par19" name="Input Value_PASSING_KeyCondition2 [oid]" sourceLinkParameter="sv1#inn1#oln6#par44" target="sv1#mfu2#su3#kcond2.ent2#att3"/>
       </Link>
-      <OKLink id="sv1#tmu2#oln10" name="OKLink10" to="sv1#mfu2" automaticCoupling="true" gr:bendpoints="65,35,-65,-5"/>
+      <OKLink id="sv1#tmu2#oln10" name="OKLink10" to="sv1#mfu2" automaticCoupling="true" gr:bendpoints="85,1,-65,-39"/>
     </TimeUnit>
+    <SelectorUnit gr:x="165" gr:y="235" id="sv1#seu1" name="Carrega per  nom" entity="ent2" distinctAttributes="ent2#att7 ent2#att5 ent2#att4 ent2#att6 ent2#att3">
+      <Link id="sv1#seu1#ln5" name="Link5" to="sv1#inn1" type="transport" validate="true">
+        <LinkParameter id="sv1#seu1#ln5#par1" name="created_PASSING" source="ent2#att7Array" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par2" name="Definition:_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par32" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par3" name="entry_PASSING" source="ent2#att4Array" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par4" name="Entry Object_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par33" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par5" name="Entry:_PASSING" sourceLinkParameter="sv1#page3#enu1#ln9#par34" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par8" name="last_modified_PASSING" source="ent2#att6Array" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par9" name="oid_PASSING" source="ent2#att3Array" passing="true"/>
+        <LinkParameter id="sv1#seu1#ln5#par12" name="oid_Input" source="ent2#att3Array" target="sv1#inn1.isnotnull"/>
+      </Link>
+      <Selector id="sv1#seu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#seu1#su1#acond3" name="AttCondition3" predicate="eq" booleanOperator="or" implied="false" attributes="ent2#att4" ignoreCase="true"/>
+      </Selector>
+      <OKLink id="sv1#seu1#oln3" name="OKLink3" to="sv1#inn1" automaticCoupling="true" gr:bendpoints="88,11,-52,16"/>
+    </SelectorUnit>
   </OperationUnits>
 </SiteView>
